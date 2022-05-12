@@ -29,6 +29,7 @@ function count() {
         result.innerHTML += `fim.`;
 
         document.querySelector('#start').value = ''
+        document.querySelector('#start').focus()
         document.querySelector('#steps').value = ''
         document.querySelector('#fim').value = ''
     } else {
@@ -56,6 +57,7 @@ function calc() {
     }
 
     document.querySelector('#nmbr').value = '';
+    document.querySelector('#nmbr').focus()
 }
 
 /*                                  Ultimo desafio                                    */
@@ -89,6 +91,7 @@ function addNumbr() {
         console.log('ok')
         console.log(valores)
         num.value = ''
+        num.focus()
     } else {
 
         window.alert('valor ja existente ou inválido')
