@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>title</header>
+
+    <section>
+        <div>contador</div>
+        <div class="block">
+            <div>Início: <input type="number" name="start" id="start"></div>
+            <div>Passo: <input type="number" name="steps" id="steps"></div>
+            <div>Fim: <input type="number" name="fim" id="fim"></div>
+            <input onclick="count()" type="button" value="Count" class="button" id="bttn">
+        </div>
+
+
+        <div class="resultado">
+            <p>contando:</p>
+            <div id="result"></div>
+        </div>
+
+    </section>
+
+    <section>
+        <div>Tabuada de 10</div>
+        <div>
+            <div>
+                <div>
+                    Número: <input id="nmbr" type="number">
+                </div>
+
+                <input onclick="calc()" type="button" value="calculate" class="button" id="bttn">
+            </div>
+            <div id="table"></div>
+
+        </div>
+    </section>
+
+    <section>
+
+        <div style="display: flex; flex-direction: column; gap: 1rem">
+            Número (de 1 a 100):
+            <input id="addNmbr" type="number">
+            <input class="button" id="bttn" value="adicionar" type="button" onclick="addNumbr()">
+
+            <div id="table" class="lista"></div>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem">
+
+                <input style="margin-top: 20px;" class="button" id="bttn" value="Resultado" type="button"
+                    onclick="showData()">
+
+                <div id="table" class="shwRslt">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <footer>© Danoninho Ice Voltou</footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
